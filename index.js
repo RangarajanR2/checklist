@@ -12,7 +12,7 @@ let routes = require('./routes')
 //Use jwt
 
 
-app.use('/', routes)
+app.use('/api/v1', routes)
 
 
 app.listen(config.PORT,()=>{

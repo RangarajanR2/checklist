@@ -5,7 +5,7 @@ const config    = require('../config')
 
 let db = function(){
 
-    let host = config.dbUri;
+    let host = config.MONGO;
     let isConnected = false;
 
     this.connect = function(){

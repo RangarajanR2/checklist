@@ -5,6 +5,7 @@ module.exports = new Schema({
     task : String,
     description : String,
     priority : {type: String, enum : ["CRITICAL","HIGH","MEDIUM","LOW"]},
+    tags : [String],
     isCompleted : {type : Boolean, default : false},
     comments : [String],
     createdAt : { type : Date, default : Date.now()},
